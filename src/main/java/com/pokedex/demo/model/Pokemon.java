@@ -1,6 +1,5 @@
 package com.pokedex.demo.model;
 
-import com.pokedex.demo.model.enums.Tipagem;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -14,7 +13,7 @@ public class Pokemon {
 
     private String nome;
     private int level;
-    private Tipagem tipo;
+    private String tipo;
 
     public Pokemon() {
     }
@@ -43,11 +42,11 @@ public class Pokemon {
         this.level = level;
     }
 
-    public Tipagem getTipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(Tipagem tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 }
